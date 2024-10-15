@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SMAN 3 Bandung</title>
+    <link rel="stylesheet" type="text/css" href="Projek CSS Fathir Aufa Azka.css">
+    <link rel="icon" type="image/x-icon" href="img/heading.png">
+</head>
+<body>
+    <div class="header">
+        <div>
+            <img src="img/Logo SMAN 3.png" style="width: 120px; height: 125px; float: left;">
+            
+            <p>SMA Negeri 3 Bandung</p>
+            <p style="font-size: 20px; line-height: 0px;">KNOWLEDGE IS POWER BUT CHARACTER IS MORE</p>
+        </div>
+
+        <div class="menu">
+            <img src="img/Menu.png">
+
+            <div class="menu-item-container">
+                <a href="#" class="menu-item">BERANDA</a>
+                <a href="PROFIL.html" class="menu-item">PROFIL</a>
+                <a href="BERITA.html" class="menu-item">BERITA</a>
+            </div>
+        </div>
+        
+        <script>
+            const menu = document.querySelector('.menu');
+            const menuContainer = document.querySelector('.menu-item-container');
+            let show = false;
+
+            const menuItems = document.querySelectorAll('.menu-item');
+
+            for (let i = 0; i < menuItems.length; i++) {
+                menuItems[i].addEventListener('click', e => {
+                    e.stopPropagation();
+                });
+            }
+
+            menu.addEventListener('click', () => {
+                if (show) {
+                    menuContainer.removeAttribute('show');
+                } else {
+                    menuContainer.setAttribute('show', 'true');
+                }
+
+                show = !show;
+            });
+        </script>
+    </div>
+
+    <div class="isi">
+        <p>SMAN 3 Bandung adalah sekolah menengah atas unggulan yang terletak di Jalan Belitung No. 8, Bandung. Didirikan pada tahun 1950, sekolah ini memiliki sejarah panjang dengan akar dari masa kolonial Belanda. Dikenal karena prestasi akademiknya yang tinggi, SMAN 3 sering menjadi pilihan utama siswa berprestasi. Sekolah ini juga aktif dalam berbagai bidang seni, olahraga, dan kegiatan ekstrakurikuler. Gedungnya merupakan bangunan bersejarah, berbagi lokasi dengan SMAN 5 Bandung.</p>
+        <img src="img/gedung SMAN 3.webp" style="width: 300px; height: 200px; padding-left: 20px;">
+    </div>
+
+    <div class="footer">
+        <p style="color: white; font-family:Arial, Helvetica, sans-serif;">SMAN 3 BANDUNG</p>
+        <div>
+            <a href="https://youtube.com/@smanegeri3bandung848?si=n50u_jO3-mqpfg0P"><img src="img/youtube-app-white-icon.png" class="logo"></a>
+            <img src="img/whatsapp-white-icon.png" class="logo">
+            <a href="https://x.com/belitungbarat"><img src="img/x-social-media-white-icon.png" class="logo"></a>
+            <a href="https://www.instagram.com/sman3.bandung?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="img/instagram-white-icon.png" class="logo"></a>
+        </div>
+    </div>
+</body>
+</html>
