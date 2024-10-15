@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SMAN 3 Bandung</title>
+    <link rel="stylesheet" type="text/css" href="Projek CSS Fathir Aufa Azka.css">
+    <link rel="icon" type="image/x-icon" href="img/heading.png">
+</head>
+<body>
+    <div class="header">
+        <div>
+            <img src="img/Logo SMAN 3.png" style="width: 120px; height: 125px; float: left;">
+            
+            <p>SMA Negeri 3 Bandung</p>
+            <p style="font-size: 20px; line-height: 0px;">KNOWLEDGE IS POWER BUT CHARACTER IS MORE</p>
+        </div>
+
+        <div class="menu">
+            <img src="img/Menu.png">
+
+            <div class="menu-item-container">
+                <a href="Projek HTML Fathir Aufa Azka XI3.html" class="menu-item">BERANDA</a>
+                <a href="PROFIL.html" class="menu-item">PROFIL</a>
+                <a href="BERITA.html" class="menu-item">BERITA</a>
+            </div>
+        </div>
+        
+        <script>
+            const menu = document.querySelector('.menu');
+            const menuContainer = document.querySelector('.menu-item-container');
+            let show = false;
+
+            const menuItems = document.querySelectorAll('.menu-item');
+
+            for (let i = 0; i < menuItems.length; i++) {
+                menuItems[i].addEventListener('click', e => {
+                    e.stopPropagation();
+                });
+            }
+
+            menu.addEventListener('click', () => {
+                if (show) {
+                    menuContainer.removeAttribute('show');
+                } else {
+                    menuContainer.setAttribute('show', 'true');
+                }
+
+                show = !show;
+            });
+        </script>
+    </div>
+
+    <div class="subheader">
+        <h1>BERITA</h1>
+    </div>
+
+    <hr style="height: 3px; background-color: black; margin: 0;">
+
+    <div class="pilihan-subheader">
+        <p><a href="Ekstrakurikuler.html" >Ekstrakurikuler</a> | <a href="Prestasi.html" >Prestasi</a>
+    </div>
+
+    <hr style="height: 3px; background-color: black; margin: 0;">
+
+    <div class="isi">
+        <style>
+            #eskul {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 50px;
+            }
+        </style>
+        <div id="eskul"> 
+            <ul>
+                <li>Aktivis Lingkungan Tiga (ALGA)</li>
+                <li>Badminton Club 3 (BC 3)</li>
+                <li>Band 3</li>
+                <li>Belitung Muda 3 (BM 3)</li>
+                <li>Dewan Keluarga Masjid Al-Furqan</li>
+                <li>Jelema Potret Tiloe (JEPRET!)</li>
+                <li>Kelompok Vokal 3 (KV3)</li>
+                <li>Keluarga Paduan Angklung 3 (KPA 3)</li>
+                <li>Lingkung Seni Sunda (LSS)</li>
+            </ul>
+            <ul>
+                <li>Palang Merah Remaja 3</li>
+                <li>Pelayanan Siswa Kristen 3 (LISTEN 3)</li>
+                <li>Perhimpunan Penjelajah Alam Jamadagni</li>
+                <li>Pramuka SMAN 3 Bandung</li>
+                <li>Sanggar Seni Rupa 3 (SSR 3)</li>
+                <li>Satuan Pengibar Bendera 3 (SPARA 3)</li>
+                <li>Softball SMAN 3 Bandung (FOSTER)</li>
+                <li>Student English Forum 3 (SEF 3)</li>
+            </ul>
+            <ul>
+                <li>Majalah 3 (M3)</li>
+                <li>Musik Klasik 3 (MK 3)</li>
+                <li>Movie Production 3 (MP3)</li>
+                <li>Nihongo Kurabu 3 (NK 3)</li>
+                <li>Organisasi Manajemen dan Kewirausahaan 3 (OMK 3)</li>
+                <li>The Incredible Ice Skating 3 (TIIS 3)</li>
+                <li>Tiloe's Theatre (TST)</li>
+                <li>Tim Riset, Olimpiade, dan Teknologi 3 (Trilogi 3)</li>
+                <li>Unit Bola Basket 3 (UBBAS 3)</li>
+            </ul>
+        </div>
+    </div>
+    </div>
+
+    <div class="footer">
+        <p style="color: white; font-family:Arial, Helvetica, sans-serif;">SMAN 3 BANDUNG</p>
+        <div>
+            <a href="https://youtube.com/@smanegeri3bandung848?si=n50u_jO3-mqpfg0P"><img src="img/youtube-app-white-icon.png" class="logo"></a>
+            <img src="img/whatsapp-white-icon.png" class="logo">
+            <a href="https://x.com/belitungbarat"><img src="img/x-social-media-white-icon.png" class="logo"></a>
+            <a href="https://www.instagram.com/sman3.bandung?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="img/instagram-white-icon.png" class="logo"></a>
+        </div>
+    </div>
+</body>
+</html>

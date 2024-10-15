@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SMAN 3 Bandung</title>
+    <link rel="stylesheet" type="text/css" href="Projek CSS Fathir Aufa Azka.css">
+    <link rel="icon" type="image/x-icon" href="img/heading.png">
+</head>
+<body>
+    <div class="header">
+        <div>
+            <img src="img/Logo SMAN 3.png" style="width: 120px; height: 125px; float: left;">
+            
+            <p>SMA Negeri 3 Bandung</p>
+            <p style="font-size: 20px; line-height: 0px;">KNOWLEDGE IS POWER BUT CHARACTER IS MORE</p>
+        </div>
+
+        <div class="menu">
+            <img src="img/Menu.png">
+
+            <div class="menu-item-container">
+                <a href="Projek HTML Fathir Aufa Azka XI3.html" class="menu-item">BERANDA</a>
+                <a href="PROFIL.html" class="menu-item">PROFIL</a>
+                <a href="BERITA.html" class="menu-item">BERITA</a>
+            </div>
+        </div>
+        
+        <script>
+            const menu = document.querySelector('.menu');
+            const menuContainer = document.querySelector('.menu-item-container');
+            let show = false;
+
+            const menuItems = document.querySelectorAll('.menu-item');
+
+            for (let i = 0; i < menuItems.length; i++) {
+                menuItems[i].addEventListener('click', e => {
+                    e.stopPropagation();
+                });
+            }
+
+            menu.addEventListener('click', () => {
+                if (show) {
+                    menuContainer.removeAttribute('show');
+                } else {
+                    menuContainer.setAttribute('show', 'true');
+                }
+
+                show = !show;
+            });
+        </script>
+    </div>
+
+    <div class="subheader">
+        <h1>PROFIL</h1>
+    </div>
+
+    <hr style="height: 3px; background-color: black; margin: 0;">
+
+    <div class="pilihan-subheader">
+        <p><a href="Visi & Misi.html" >Visi & Misi</a> | <a href="Hymne & Mars.html" >Hymne & Mars</a> | <a href="Sejarah.html" >Sejarah</a> | <a href="Fasilitas.html" >Fasilitas</a> | <a href="Alamat.html">Alamat</a></p>
+    </div>
+
+    <hr style="height: 3px; background-color: black; margin: 0;">
+
+    <div class="isi">
+       <table cellpadding="5" style="width: 70%;">
+        <tr>
+            <td>Nama Sekolah </td>
+            <td>SMAN 3 Bandung</td>
+        </tr>
+        <tr>
+            <td>NSS</td>
+            <td>30.1.02.60.08060</td>
+        </tr>
+        <tr>
+            <td>Penyelenggara</td>
+            <td>Pemerintah</td>
+        </tr>
+        <tr>
+            <td>Status</td>
+            <td>Negeri</td>
+        </tr>
+        <tr>
+            <td>Alamat</td>
+            <td>Jalan Belitung 8 Bandung, Kelurahan Merdeka, Kecamatan Sumur Bandung, Wilayah Bandung Wetan, Kota Bandung, Provinsi Jawa Barat</td>
+        </tr>
+        <tr>
+            <td>Tahun berdiri</td>
+            <td>2 Agustus 1952</td>
+        </tr>
+        <tr>
+            <td>Luas Tanah</td>
+            <td>7. 120 m<sup>2</sup></td>
+        </tr>
+        <tr>
+            <td>Luas Bangunan</td>
+            <td>5. 340 m<sup>2</sup></td>
+        </tr>
+        <tr>
+            <td>Luas Halaman</td>
+            <td>760 m<sup>2</sup></td>
+        </tr>
+        <tr>
+            <td>Luas Lapangan Olahraga</td>
+            <td>11.000 m<sup>2</sup></td>
+        </tr>
+       </table>
+    </div>
+
+    <div>
+        <p style="text-align: center; font-family:Arial, Helvetica, sans-serif; font-weight: bold;">FASILITAS SEKOLAH</p>
+
+        <style>
+            #fasilitas {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 50px;
+            }
+        </style>
+        <div id="fasilitas"> 
+            <ul>
+                <li>Kelas</li>
+                <li>Masjid (Masiina Sholihin)</li>
+                <li>Mushola putri</li>
+                <li>Perpustakaan</li>
+                <li>Laboratorium biologi</li>
+                <li>Laboratorium fisika</li>
+                <li>Laboratorium kimia</li>
+                <li>Laboratorium komputer</li>
+                <li>Green house</li>
+                <li>Lapangan basket/voli (Lapangan Bali)</li>
+            </ul>
+            <ul>
+                <li>Lapangan sepak bola/atletik (Lapangan Bali)</li>
+                <li>Bangsal senam/lapangan bulu tangkis (Lapangan Bali)</li>
+                <li>Aula</li>
+                <li>Ruang AVI</li>
+                <li>Koperasi</li>
+                <li>Kantin sehat</li>
+                <li>Gazebo</li>
+                <li>Roofgrass</li>
+                <li>Rooftop</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="foto-fasilitas" style="margin-bottom: 30px;">
+        <style>
+            #text-foto-fasilitas {
+                position: relative;
+            }
+
+            #text-foto-fasilitas hr {
+                border: 1.5px solid black;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                right: 0;
+                transform: translate(0, calc(-50% - 0.5rem));
+                z-index: -100;
+            }
+
+            #text-foto-fasilitas p {
+                width: fit-content;
+                margin: auto;
+                text-align: center; 
+                font-family:Arial, Helvetica, sans-serif; 
+                font-weight: bold; 
+                background-color: white;
+                padding-inline: 3px;
+            }
+        </style>
+
+        <div id="text-foto-fasilitas">
+            <hr>
+            <p>FOTO FASILITAS SEKOLAH</p>
+        </div>
+        <div class="img-container">
+            <figure>
+                <img src="img/fasilitas/ruang kelas.jpg">
+                <figcaption>Ruang Kelas</figcaption>
+            </figure>
+            <figure>
+                <img src="img/fasilitas/perpustakaan.jpg">
+                <figcaption>Perpustakaan</figcaption>
+            </figure>
+            <figure>
+                <img src="img/fasilitas/Lapangan upacara.jpg" alt="">
+                <figcaption>Lapangan Upacara</figcaption>
+            </figure>
+            <figure>
+                <img src="img/fasilitas/aula.jpg" alt="">
+                <figcaption>Aula</figcaption>
+            </figure>
+            <figure>
+                <img src="img/fasilitas/lab komputer.jpg" alt="">
+                <figcaption>Lab Komputer</figcaption>
+            </figure>
+            <figure>
+                <img src="img/fasilitas/lapangan bali.jpg" alt="">
+                <figcaption>Lapangan Bali</figcaption>
+            </figure>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p style="color: white; font-family:Arial, Helvetica, sans-serif;">SMAN 3 BANDUNG</p>
+        <div>
+            <a href="https://youtube.com/@smanegeri3bandung848?si=n50u_jO3-mqpfg0P"><img src="img/youtube-app-white-icon.png" class="logo"></a>
+            <img src="img/whatsapp-white-icon.png" class="logo">
+            <a href="https://x.com/belitungbarat"><img src="img/x-social-media-white-icon.png" class="logo"></a>
+            <a href="https://www.instagram.com/sman3.bandung?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><img src="img/instagram-white-icon.png" class="logo"></a>
+        </div>
+    </div>
+</body>
+</html>

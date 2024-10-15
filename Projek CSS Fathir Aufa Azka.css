@@ -1,0 +1,293 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    /* width: 100vw; */
+}
+
+.header {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    display:flex;
+    justify-content: center;
+
+    position: sticky;
+    top: 0;
+
+    background-color: white;
+    z-index: 1000;
+
+    border-bottom: 5px solid black;
+}
+
+.header p {
+    line-height: 25px;
+    font-size: 30px;
+}
+
+.isi {
+    width: 100%;
+    height: 40vw;
+    
+    margin: auto;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.isi-prestasi {
+    display: flex;
+    align-items: center;
+}
+
+.isi::before {
+    content: '';
+    background-image:linear-gradient(transparent, white), url(img/gedung\ SMAN\ 3\ \(bg\).jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    opacity: 0.25;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 100%;
+
+    z-index: -1;
+}
+
+.isi > p {
+    margin: 0;
+    color: black;
+    text-align: justify;
+    width: 800px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.footer {
+    margin: 0;
+    background-color: black;
+    width: 100%;
+    height: 7vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 60px;
+    box-sizing: border-box;
+}
+
+.footer > div {
+    height: 50%;
+}
+
+.logo {
+    height: 30px;
+    width: 30px ;
+    padding-right: 10px; 
+    opacity: 0.5;
+    transition: transform 200ms, opacity 200ms;
+}
+
+.logo:hover {
+    opacity: 1;
+}
+
+
+.menu > img {
+    width: 40px;
+    height: 40px;
+}
+
+img {
+    object-fit: cover;
+}
+
+.header > div {
+    /* overflow: auto; */
+    flex: 1 0 auto;
+}
+
+.menu {
+    width: 40px;
+    height: 40px;
+
+    flex: 0 0 auto !important;
+
+    position: relative;
+}
+
+.menu-item-container {
+    position: absolute;
+    top: 100%;
+    right:10px;
+
+    visibility: hidden;
+
+    width: 200px;
+}
+
+.menu-item {
+    width: 100%;
+    display: inline-block;
+    opacity: 0.5;
+    transition: transform 200ms, opacity 200ms;
+    color:black;
+}
+
+.menu-item:hover {
+    border: 0.5px solid black;
+    transform: scale(101%);
+    opacity: 1;
+    background-color: whitesmoke;
+    padding-left: 2px;
+}
+
+.menu-item-container[show="true"] {
+    visibility: visible;
+}
+
+.subheader {
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subheader > h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+}
+
+.pilihan-subheader {
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.pilihan-subheader a {
+    color: black;
+    opacity: 0.4;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.pilihan-subheader a:hover{
+    opacity: 1;
+}
+
+.visi, .misi, li {
+    margin: 0;
+    color: black;
+    text-align: justify;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    padding-left:30px;
+    padding-right:30px;
+}
+
+table, td {
+    border-spacing: 0;
+    border: 2px solid black;
+    border-collapse: collapse;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.foto-fasilitas figure {
+    width: 30vw;
+    height: 200px;
+    object-fit: cover;
+
+    padding: 5px;
+    margin: 0;
+    box-sizing: border-box;
+
+    flex: 1 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: stretch;
+}
+
+.foto-fasilitas img {
+    width: 100%;
+    height: calc(100% - 1rem);
+    z-index: -10;
+    object-fit: cover;
+
+    flex: 1 1 auto;
+}
+
+.foto-fasilitas figcaption {
+    flex: 1 0 auto;
+    height: 1rem;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.foto-fasilitas .img-container {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    flex-wrap: wrap;
+
+    padding: 5px;
+}
+
+figcaption {
+    text-align:center
+}
+
+.tombol {
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px 30px;
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    font-size: 50px;
+    background-color: grey;
+    opacity: 0.5;
+    transition: transform 200ms, opacity 200ms;
+  }
+
+.tombol:hover {
+    transform: scale(103%);
+    opacity: 1;
+}
+
+.foto-prestasi {
+    width: 400px;
+    height: 400px;
+}
+
+.selengkapnya {
+    border: 2px solid black; 
+    width: 400px; 
+    text-align: center; 
+    font-family:Arial, Helvetica, sans-serif; 
+    background-color: whitesmoke;
+    color:black
+}
+
+.selengkapnya:hover {
+    background-color: black;
+    color:white
+}
+
+a {
+    text-decoration: none;
+}
